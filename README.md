@@ -5,6 +5,7 @@ presented in the article Univariate differentiable optimization algorithms and
 linesearch computation.
 
 ## How to install
+`Pkg.clone("git@github.com:Goysa2/UnivariateDifferentiableOptimizationAlgorithms.git")`
 
 ## How to use
 `Pkg.test("UnivariateDifferentiableOptimizationAlgorithms")`
