@@ -1,5 +1,7 @@
 module UnivariateDifferentiableOptimizationAlgorithms
 
-# package code goes here
+using Optimize, NLPModels
+using Plots
+using ScalarSolvers
 
 end # module

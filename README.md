@@ -5,10 +5,21 @@ presented in the article Univariate differentiable optimization algorithms and
 linesearch computation.
 
 ## How to install
-`Pkg.clone("git@github.com:Goysa2/UnivariateDifferentiableOptimizationAlgorithms.git")`
+`Pkg.clone("https://github.com/Goysa2/UnivariateDifferentiableOptimizationAlgorithms.git")`
 
 ## How to use
-`Pkg.test("UnivariateDifferentiableOptimizationAlgorithms")`
+Open terminal in .julia/v0.6/UnivariateDifferentiableOptimizationAlgorithms/src .
+In order to install all necessary packages, run `include("install.jl")`. When
+all required packages are installed, run `include("includes.jl")` to make sure
+all functions are defined. Now to produce the different performance profiles,
+you simply need to includes one the different scripts:
+`include("testcompare-1D.jl")`, `include("testcompare-1D-6-variants.jl")`,
+`include("testcompare-CG-HZ.jl")`, `include("testcompare-Newton.jl")`, `include("testcompare-L-BFGS.jl")`
+
+
+## Note on Plotting
+We used PyPlot to handle the plotting, but differents plotting backends will
+produce the performance profile.
 
 [![Build Status](https://travis-ci.org/Goysa2/UnivariateDifferentiableOptimizationAlgorithms.jl.svg?branch=master)](https://travis-ci.org/Goysa2/UnivariateDifferentiableOptimizationAlgorithms.jl)
 
