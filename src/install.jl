@@ -39,12 +39,9 @@ if !("LineSearch" in keys(Pkg.installed()))
 	Pkg.build("LineSearch")
 end
 
-if !("LineSearch" in keys(Pkg.installed()))
-    Pkg.clone("https://github.com/Goysa2/LineSearch.git")
-	Pkg.build("LineSearch")
-end
-
 if !("ScalarSolvers" in keys(Pkg.installed()))
     Pkg.clone("https://github.com/Goysa2/ScalarSolvers.git")
 	Pkg.build("ScalarSolvers")
 end
+
+Pkg.update()
