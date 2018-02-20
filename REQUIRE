@@ -1,10 +1,1 @@
 julia 0.6
-JuMP
-NLPModels
-MathProgBase
-Optimize
-LSDescentMethods
-OptimizationProblems
-LineSearch
-ScalarSolvers
-Plots
