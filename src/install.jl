@@ -26,7 +26,7 @@ end
 
 if !("Stopping" in keys(Pkg.installed()))
     Pkg.clone("https://github.com/vepiteski/Stopping.jl.git")
-	Pkg.build("Stoppping")
+	Pkg.build("Stopping")
 end
 
 if !("OptimizationProblems" in keys(Pkg.installed()))
