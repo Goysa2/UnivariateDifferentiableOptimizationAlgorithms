@@ -9,12 +9,11 @@ linesearch computation.
 
 ## How to use
 Open terminal in .julia/v0.6/UnivariateDifferentiableOptimizationAlgorithms/src .
-In order to install all necessary packages, run `include("install.jl")`. When
-all required packages are installed, run `include("includes.jl")` to make sure
-all functions are defined. Now to produce the different performance profiles,
-you simply need to includes one the different scripts:
-`include("testcompare-1D.jl")`, `include("testcompare-1D-6-variants.jl")`,
-`include("testcompare-CG-HZ.jl")`, `include("testcompare-Newton.jl")`, `include("testcompare-L-BFGS.jl")`
+In order to install all necessary packages, run `include("install.jl")`.  Now to
+produce the different performance profiles, you simply need to includes one the
+different scripts: `include("testcompare-1D.jl")`,
+`include("testcompare-1D-6-variants.jl")`, `include("testcompare-CG-HZ.jl")`,
+`include("testcompare-Newton.jl")`, `include("testcompare-L-BFGS.jl")`
 
 
 ## Note on Plotting

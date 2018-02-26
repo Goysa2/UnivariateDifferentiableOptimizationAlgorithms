@@ -1,7 +1,7 @@
-# using Optimize
-# using NLPModels
-#
-# using Plots
+using Optimize
+using NLPModels
+
+using Plots
 # pyplot()
 
 n_min = 2
@@ -10,13 +10,13 @@ n_max = 200
 TestCUTEst = false
 
 # Math Prog Base collection
-# include("MPBProblems.jl")
+include("MPBProblems.jl")
 test_probs = mpb_probs
 
-# Select solvers
-# using LineSearch
-# using Stopping
-# using LSDescentMethods
+Select solvers
+using LineSearch
+using Stopping
+using LSDescentMethods
 
 
 #stop_norm = ARCTR.stop_norm
@@ -35,6 +35,6 @@ options = [Dict{Symbol,Any}(:verbose=>false, :stp => stp, :linesearch => Newarmi
            Dict{Symbol,Any}(:verbose=>false, :stp => stp, :linesearch => TR_Nwt_ls, :τ₀ => 0.0001, :τ₁ => 0.001)
            ]
 
-# include("compare_solvers.jl")
+include("compare_solvers.jl")
 
 P4 = compare_solvers_with_options2(solvers, options, labels, test_probs, n_min, n_max, printskip = false)[2]

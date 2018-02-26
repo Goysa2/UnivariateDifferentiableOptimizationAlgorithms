@@ -1,9 +1,8 @@
-# using Optimize
-# using NLPModels
-#
-# using Plots
-# pyplot()
+using Optimize
+using NLPModels
 
+using Plots
+# pyplot()
 
 n_min = 1
 n_max = 1
@@ -12,7 +11,7 @@ n_max = 1
 include("MPBProblems-1D.jl")
 test_probs = mpb_probs_1D
 
-# using ScalarSolvers
+using ScalarSolvers
 solvers = [bissect, bissect_Cub, bissect_nwt, bissect_sec, bissect_secA, ARC_Cub, ARC_Nwt, ARC_Sec, ARC_SecA, TR_Cub, TR_Nwt, TR_Sec, TR_SecA, zoom_Cub, zoom_Nwt, zoom_Sec, zoom_SecA]
 labels = ["Biss"; "Biss_Cub"; "Biss_Nwt"; "Biss_Sec"; "Biss_SecA"; "ARC_Cub"; "ARC_Nwt"; "ARC_Sec"; "ARC_SecA"; "TR_Cub";"TR_Nwt"; "TR_Sec"; "TR_SecA"; "zoom_Cub"; "zoom_Nwt"; "zoom_Sec"; "zoom_SecA"]
 
