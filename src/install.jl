@@ -44,4 +44,10 @@ if !("ScalarSolvers" in keys(Pkg.installed()))
 	Pkg.build("ScalarSolvers")
 end
 
+if !("LineSearches" in keys(Pkg.installed()))
+    Pkg.clone("https://github.com/JuliaNLSolvers/LineSearches.jl.git")
+    Pkg.build("LineSearches")
+end
+
+
 Pkg.update()
