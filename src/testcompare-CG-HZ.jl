@@ -3,6 +3,7 @@ using NLPModels
 
 using Plots
 # pyplot()
+plotly()
 
 n_min = 2
 n_max = 200

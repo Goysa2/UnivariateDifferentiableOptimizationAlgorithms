@@ -8,7 +8,7 @@ linesearch computation.
 `Pkg.clone("https://github.com/Goysa2/UnivariateDifferentiableOptimizationAlgorithms.git")`
 
 ## How to use
-Open terminal in .julia/v0.6/UnivariateDifferentiableOptimizationAlgorithms/src .
+Open a terminal in .julia/v0.6/UnivariateDifferentiableOptimizationAlgorithms/src .
 In order to install all necessary packages, run `include("install.jl")`.  Now to
 produce the different performance profiles, you simply need to includes one the
 different scripts: `include("testcompare-1D.jl")`,

@@ -3,6 +3,7 @@ using NLPModels
 
 using Plots
 # pyplot()
+plotly()
 
 # select problem collection
 
