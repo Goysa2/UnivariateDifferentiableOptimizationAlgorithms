@@ -8,6 +8,9 @@ linesearch computation.
 Open Julia and run:
 `Pkg.clone("https://github.com/Goysa2/UnivariateDifferentiableOptimizationAlgorithms.git")`
 
+If you don't have Julia you can find the latest version here (the code was
+originaly done in Julia 0.6): [Dowanload Julia](https://julialang.org/downloads/)
+
 ## How to use
 Open a terminal in .julia/v0.6/UnivariateDifferentiableOptimizationAlgorithms/src .
 In order to install all necessary packages, run `include("install.jl")`.  Now to
@@ -23,7 +26,7 @@ include("testcompare-L-BFGS.jl")```
 ## Warning
 * The installation script will do `Pkg.update()` when completed. Therefore make sure to comment that line if you don't want to have the lates verion of the pacakges.
 * The only testing environnement used was Ubuntu 16.04. There is no guarantee
-(sor far) that those script can work on other OS. 
+(sor far) that those script can work on other OS.
 
 ## Note on Plotting
 We used PyPlot to handle the plotting in the article, but differents plotting backends will produce the performance profile. Since PyPlot can cause problems, Plotly has been used for the scripts in this package.  
