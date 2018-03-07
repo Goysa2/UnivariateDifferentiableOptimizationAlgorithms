@@ -18,7 +18,8 @@ Open a terminal in .julia/v0.6/UnivariateDifferentiableOptimizationAlgorithms/sr
 In order to install all necessary packages, run `include("install.jl")`.  Now to
 produce the different performance profiles, you simply need to includes one the
 different scripts:
-``` include("testcompare-1D.jl")
+```
+include("testcompare-1D.jl")
 include("testcompare-1D-6-variants.jl")
 include("testcompare-CG-HZ.jl")
 include("testcompare-Newton.jl")
