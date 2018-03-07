@@ -20,16 +20,20 @@ different scripts:
 include("testcompare-1D-6-variants.jl")
 include("testcompare-CG-HZ.jl")
 include("testcompare-Newton.jl")
-include("testcompare-L-BFGS.jl")```
+include("testcompare-L-BFGS.jl")
+```
 
 
 ## Warning
-* The installation script will do `Pkg.update()` when completed. Therefore make sure to comment that line if you don't want to have the lates verion of the pacakges.
+* The installation script will do `Pkg.update()` when completed. Therefore make
+sure to comment that line if you don't want to have the lates verion of the pacakges.
 * The only testing environnement used was Ubuntu 16.04. There is no guarantee
-(sor far) that those script can work on other OS.
+(sor far) that those scripts can work on other OS.
 
 ## Note on Plotting
-We used PyPlot to handle the plotting in the article, but differents plotting backends will produce the performance profile. Since PyPlot can cause problems, Plotly has been used for the scripts in this package.  
+We used PyPlot to handle the plotting in the article, but differents plotting
+backends will produce the performance profile. Since PyPlot can cause problems,
+Plotly has been used for the scripts in this package.  
 
 [![Build Status](https://travis-ci.org/Goysa2/UnivariateDifferentiableOptimizationAlgorithms.jl.svg?branch=master)](https://travis-ci.org/Goysa2/UnivariateDifferentiableOptimizationAlgorithms.jl)
 
