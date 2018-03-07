@@ -6,7 +6,9 @@ linesearch computation.
 
 ## How to install
 Open Julia and run:
-`Pkg.clone("https://github.com/Goysa2/UnivariateDifferentiableOptimizationAlgorithms.git")`
+```
+Pkg.clone("https://github.com/Goysa2/UnivariateDifferentiableOptimizationAlgorithms.git")
+```
 
 If you don't have Julia you can find the latest version here (the code was
 originaly done in Julia 0.6): [Dowanload Julia](https://julialang.org/downloads/)
