@@ -14,7 +14,7 @@ TestCUTEst = false
 include("MPBProblems.jl")
 test_probs = mpb_probs
 
-Select solvers
+# Select solvers
 using LineSearch
 using Stopping
 using LSDescentMethods
